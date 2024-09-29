@@ -2957,27 +2957,6 @@ sub _mergeAndCreateContributors {
 
 	my $isDebug = main::DEBUGLOG && $log->is_debug;
 
-	# Bug: 2317 & 2638
-	#
-	# Bring back the TRACKARTIST role.
-	#
-	# If the user has not explictly set a compilation flag, _and_ the user
-	# has explict album artist(s) set, make the artist(s) tags become
-	# TRACKARTIST contributors for this track.
-	if (!$isCompilation) {
-
-		if ($attributes->{'ARTIST'} && $attributes->{'ALBUMARTIST'}) {
-
-			$attributes->{'TRACKARTIST'} = delete $attributes->{'ARTIST'};
-			# Bug: 6507 - use any ARTISTSORT tag for this contributor
-			$attributes->{'TRACKARTISTSORT'} = delete $attributes->{'ARTISTSORT'};
-
-			main::DEBUGLOG && $isDebug && $log->debug(sprintf("-- Contributor '%s' of role 'ARTIST' transformed to role 'TRACKARTIST'",
-				$attributes->{'TRACKARTIST'},
-			));
-		}
-	}
-
 	my %contributors = ();
 
 	for my $tag (Slim::Schema::Contributor->contributorRoles) {
