@@ -66,6 +66,9 @@ my %tagMapping = (
 
 	# for dBpoweramp CD Ripper
 	'TOTALDISCS'                => 'DISCC',
+
+	# scb
+	'DISCCOUNT'                 => 'DISCC',
 );
 
 my @tagNames = (Slim::Schema::Contributor->contributorRoles, qw(ALBUM DISCNUMBER TITLE TRACKNUMBER DATE GENRE));
