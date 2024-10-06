@@ -37,6 +37,13 @@
 				<input type="radio" name="pref_variousArtistAutoIdentification" id="pref_variousArtistAutoIdentification1" value="1" [% IF prefs.pref_variousArtistAutoIdentification %]checked="checked"[% END %] />
 				<label for="pref_variousArtistAutoIdentification1" class="stdlabel">[% 'SETUP_VARIOUSARTISTAUTOIDENTIFICATION_1' | getstring %]</label>
 			[% END %]
+
+			[% WRAPPER settingGroup title="SETUP_TRACKARTISTS" desc="SETUP_TRACKARTISTS_DESC"%]
+				<input type="radio" name="pref_enableTrackArtists" id="pref_enableTrackArtists1" value="1" [% IF prefs.pref_enableTrackArtists %]checked="checked"[% END %] />
+				<label for="pref_enableTrackArtists1" class="stdlabel">[% 'SETUP_ENABLETRACKARTISTS_1' | getstring %]</label><br/>
+				<input type="radio" name="pref_enableTrackArtists" id="pref_enableTrackArtists0" value="0" [% IF NOT prefs.pref_enableTrackArtists %]checked="checked"[% END %] />
+				<label for="pref_enableTrackArtists0" class="stdlabel">[% 'SETUP_ENABLETRACKARTISTS_0' | getstring %]</label>
+			[% END %]
 		[% END %]
 
 		[% WRAPPER settingGroup title="" desc="SETUP_USETPE2ASALBUMARTIST_DESC"%]

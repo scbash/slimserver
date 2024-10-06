@@ -185,6 +185,7 @@ sub init {
 		'conductorInArtists'    => 0,
 		'bandInArtists'         => 0,
 		'variousArtistAutoIdentification' => 1,
+		'enableTrackArtists'    => 1,
 		'useUnifiedArtistsList' => 0,
 		'useTPE2AsAlbumArtist'  => 0,
 		'variousArtistsString'  => undef,

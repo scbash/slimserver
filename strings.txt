@@ -18084,6 +18084,18 @@ SETUP_VARIOUSARTISTAUTOIDENTIFICATION_0
 	SV	Lista samlingsalbum under varje enskild artist
 	ZH_CN	把合辑发表在个别艺人中
 
+SETUP_TRACKARTISTS
+	EN	Compilation track artists
+
+SETUP_TRACKARTISTS_DESC
+	EN	When ALBUMARTIST is set, but COMPILATION is not, you can choose if only ALBUMARTIST is listed in the Artists menu (default) or if all ARTISTs are listed.
+
+SETUP_ENABLETRACKARTISTS_1
+	EN	Only show AlbumArtist in Artist menu
+
+SETUP_ENABLETRACKARTISTS_0
+	EN	Show all artists in Artist menu
+
 SETUP_VARIOUSARTISTSSTRING_DESC
 	CS	Pokud jsou sbírky seskupeny dohromady, zobrazí se standardně pod názvem "Různí interpreti". Tento název můžete změnit níže.
 	DA	Når numrene på kompilationsalbum grupperes, vises de som standard under Diverse. Du kan ændre navnet nedenfor.
